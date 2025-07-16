@@ -6,15 +6,19 @@ homepage: https://github.com/InvisibleWrench/FlutterMidiCommand
 
 environment:
   sdk: ">=3.1.0 <4.0.0"
-  flutter: ">=2.11.0"
+  flutter: ">=3.11.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  flutter_midi_command_platform_interface: ^0.4.1
+  flutter_midi_command_platform_interface: ^0.4.3
   flutter_midi_command_linux: ^0.3.0
-  flutter_midi_command_windows: ^0.1.0
-    
+  flutter_midi_command_windows:
+    git:
+      url: https://github.com/kristofb/flutter_midi_command_windows.git
+      ref: 0b326c93e06eada007f43ab96942987bf10d7a57
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
